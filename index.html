@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Varun Chandan Rao Ramshetti Portfolio</title>
+<title>Varun Ramshetti | Software Engineer</title>
 
 <style>
 
 body{
 font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 margin:0;
-background:#fafafa;
+background:#f7f9fc;
 color:#333;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 padding:40px;
 }
 
-h1{
-font-size:40px;
+.hero{
+margin-bottom:50px;
+}
+
+.hero h1{
+font-size:42px;
 margin-bottom:10px;
 }
 
-.section{
-margin-top:60px;
-}
-
-.project{
-background:white;
-padding:20px;
-margin-top:20px;
-border-radius:10px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
-}
-
-a{
+.links a{
+margin-right:15px;
 text-decoration:none;
 color:#0366d6;
-margin-right:15px;
+font-weight:500;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+transition:transform 0.2s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.tech{
+margin-top:10px;
+color:#666;
+font-size:14px;
 }
 
 </style>
@@ -49,52 +66,59 @@ margin-right:15px;
 
 <div class="container">
 
+<div class="hero">
+
 <h1>Varun Chandan Rao Ramshetti</h1>
 
 <p>
-Computer Science graduate from George Mason University specializing in backend development, REST APIs, and cloud deployment.
+Backend developer focused on building scalable APIs and cloud applications.
 </p>
 
-<a href="https://github.com/vcr27">GitHub</a>
+<div class="links">
 <a href="#">Resume</a>
+<a href="https://github.com/yourusername">GitHub</a>
 <a href="#">LinkedIn</a>
-
-
-<div class="section">
-
-<h2>Projects</h2>
-
-<div class="project">
-<h3>MovieTracker</h3>
-<p>
-Full-stack movie tracking application built using Spring Boot, React, and PostgreSQL.
-</p>
-
-<p>
-Tech: Java • Spring Boot • React • PostgreSQL • Docker • AWS
-</p>
-
-<a href="https://github.com/vcr27/movie-tracker">GitHub</a>
+</div>
 
 </div>
 
-<div class="project">
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<h3>MovieTracker</h3>
+
+<p>
+Full-stack movie tracking platform built with Spring Boot, React, and PostgreSQL.
+</p>
+
+<p class="tech">
+Java • Spring Boot • React • PostgreSQL • Docker • AWS
+</p>
+
+<a href="#">GitHub Repo</a>
+
+</div>
+
+<div class="card">
 
 <h3>LLM Citation Converter</h3>
 
 <p>
-AI-powered tool that converts academic citations between APA and MLA formats.
+AI-powered tool converting academic citations between APA and MLA formats.
 </p>
 
-<p>
-Tech: Python • OpenAI API
+<p class="tech">
+Python • OpenAI API
 </p>
 
-<a href="https://github.com/vcr27/citation-converter">GitHub</a>
+<a href="#">GitHub Repo</a>
 
 </div>
 
-<div class="project">
+<div class="card">
 
 <h3>Database Optimization</h3>
 
@@ -102,33 +126,13 @@ Tech: Python • OpenAI API
 Improved PostgreSQL query performance by 40% through indexing and schema optimization.
 </p>
 
-<p>
-Tech: PostgreSQL • Python • REST APIs
+<p class="tech">
+PostgreSQL • Python • REST APIs
 </p>
 
-<a href="https://github.com/vcr27/database-optimization">GitHub</a>
+<a href="#">GitHub Repo</a>
 
 </div>
-
-</div>
-
-
-<div class="section">
-
-<h2>Skills</h2>
-
-<p>
-Java • Spring Boot • Python • React • PostgreSQL • Docker • AWS • REST APIs
-</p>
-
-</div>
-
-
-<div class="section">
-
-<h2>Contact</h2>
-
-<p>Email: r.varunchandanrao@gmail.com</p>
 
 </div>
 
