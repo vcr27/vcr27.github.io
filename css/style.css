@@ -93,14 +93,20 @@ padding:120px 20px;
 
 }
 
-.hero img{
+.hero img {
 
-width:160px;
-height:160px;
+width: 200px;
+height: 200px;
 
-border-radius:50%;
+border-radius: 50%;
 
-border:5px solid #1f2937;
+object-fit: cover;
+
+border: 6px solid #1f2937;
+
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+margin-bottom: 30px;
 
 }
 
