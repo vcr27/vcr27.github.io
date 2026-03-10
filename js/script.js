@@ -1,36 +1,23 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+function reveal(){
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", () => {
-    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-    menuToggle.setAttribute("aria-expanded", String(!isExpanded));
-    navLinks.classList.toggle("open");
-  });
+let reveals = document.querySelectorAll(".reveal");
 
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-    });
-  });
+for(let i=0;i<reveals.length;i++){
+
+let windowHeight = window.innerHeight;
+
+let elementTop = reveals[i].getBoundingClientRect().top;
+
+let elementVisible = 100;
+
+if(elementTop < windowHeight - elementVisible){
+
+reveals[i].classList.add("active");
+
 }
 
-function reveal() {
-  const reveals = document.querySelectorAll(".reveal");
-  const windowHeight = window.innerHeight;
+}
 
-  reveals.forEach((element) => {
-    const elementTop = element.getBoundingClientRect().top;
-    const elementVisible = 120;
-
-    if (elementTop < windowHeight - elementVisible) {
-      element.classList.add("active");
-    }
-  });
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener("resize", reveal);
-window.addEventListener("load", reveal);
-reveal();
