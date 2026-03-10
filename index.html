@@ -1,234 +1,157 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>Varun Ramshetti</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varun Ramshetti | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-
-<!-- NAVBAR -->
-
-<nav class="navbar">
-
-<div class="logo">VR</div>
-
-<div class="nav-links">
-
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-
-</div>
-
-</nav>
-
-
-
-<!-- HERO -->
-
-<section class="hero reveal">
-
-<div class="profile-container">
-    <img src="images/profile.jpg" alt="Varun Ramshetti">
-</div>
-<h1>
-
-Hey, I'm <span class="accent">Varun Ramshetti</span>.<br>
-Check out what I'm building.
-
-</h1>
-
-</section>
-
-
-
-<!-- EXPERIENCE -->
-
-<section id="experience" class="section dark-section reveal">
-
-<h2>Experience</h2>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3>Web Developer</h3>
-<p>Running Name LLC</p>
-
-<p>
-Developed responsive client websites and deployed multiple production updates.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Backend Developer Intern</h3>
-<p>GBCS Group</p>
-
-<p>
-Built onboarding platform features using Next.js and React while debugging complex workflows.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Software Engineer Intern</h3>
-<p>Scholarship Auditions</p>
-
-<p>
-Developed backend features using Python and JavaScript REST APIs.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- PROJECTS -->
-
-<section id="projects" class="section reveal">
-
-<h2>Projects</h2>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3>MovieTracker</h3>
-
-<p>
-Full stack application using Spring Boot backend, React frontend,
-PostgreSQL database, Docker and AWS EC2 deployment.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>LLM Citation Converter</h3>
-
-<p>
-OpenAI powered citation converter that automates APA ⇄ MLA formatting.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Database Optimization & API Development</h3>
-
-<p>
-Improved PostgreSQL query performance by ~40% and created Python REST APIs.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- SKILLS -->
-
-<section id="skills" class="section reveal">
-
-<h2>Skills</h2>
-
-<div class="skill">
-
-<p>Java / Spring Boot</p>
-<div class="bar"><span style="width:90%"></span></div>
-
-</div>
-
-<div class="skill">
-
-<p>Python</p>
-<div class="bar"><span style="width:85%"></span></div>
-
-</div>
-
-<div class="skill">
-
-<p>React / Next.js</p>
-<div class="bar"><span style="width:80%"></span></div>
-
-</div>
-
-<div class="skill">
-
-<p>PostgreSQL</p>
-<div class="bar"><span style="width:85%"></span></div>
-
-</div>
-
-</section>
-
-
-
-<!-- GITHUB -->
-
-<section class="section reveal">
-
-<h2>GitHub Activity</h2>
-
-<div class="github">
-
-<img src="https://github-readme-stats.vercel.app/api?username=YOURUSERNAME&show_icons=true">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME&layout=compact">
-
-</div>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="section reveal">
-
-<h2>Contact</h2>
-
-<p>Email: r.varunchandanrao@gmail.com</p>
-
-<p>GitHub</p>
-
-<p>LinkedIn</p>
-
-</section>
-
-
-
-<footer>
-
-© 2026 Varun Ramshetti
-
-</footer>
-
-
-
-<script src="js/script.js"></script>
-
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#top" aria-label="Go to top">VR</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal">
+      <div class="hero-content">
+        <div class="profile-container">
+          <img src="images/profile.JPG" alt="Portrait of Varun Ramshetti">
+        </div>
+        <p class="eyebrow">Software Engineer · Full Stack Developer</p>
+        <h1>
+          Building reliable products with
+          <span class="accent">clean interfaces and robust backend systems.</span>
+        </h1>
+        <p class="hero-copy">
+          I design and ship web applications focused on performance, maintainability, and clear user experience.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section dark-section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Career</p>
+        <h2>Experience</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Web Developer</h3>
+          <p class="meta">Running Name LLC</p>
+          <p>Developed responsive client websites and deployed multiple production updates.</p>
+        </article>
+
+        <article class="card">
+          <h3>Backend Developer Intern</h3>
+          <p class="meta">GBCS Group</p>
+          <p>Built onboarding platform features using Next.js and React while debugging complex workflows.</p>
+        </article>
+
+        <article class="card">
+          <h3>Software Engineer Intern</h3>
+          <p class="meta">Scholarship Auditions</p>
+          <p>Developed backend features using Python and JavaScript REST APIs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>MovieTracker</h3>
+          <p>Full stack application using Spring Boot backend, React frontend, PostgreSQL database, Docker and AWS EC2 deployment.</p>
+        </article>
+
+        <article class="card">
+          <h3>LLM Citation Converter</h3>
+          <p>OpenAI-powered citation converter that automates APA and MLA formatting workflows.</p>
+        </article>
+
+        <article class="card">
+          <h3>Database Optimization & API Development</h3>
+          <p>Improved PostgreSQL query performance by around 40% and built Python REST APIs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Toolkit</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skill">
+        <div class="skill-head"><p>Java / Spring Boot</p><p>90%</p></div>
+        <div class="bar"><span style="width:90%"></span></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-head"><p>Python</p><p>85%</p></div>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-head"><p>React / Next.js</p><p>80%</p></div>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-head"><p>PostgreSQL</p><p>85%</p></div>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Open Source</p>
+        <h2>GitHub Activity</h2>
+      </div>
+      <div class="github">
+        <img src="https://github-readme-stats.vercel.app/api?username=vcr27&show_icons=true&theme=default&hide_border=true" alt="GitHub stats card">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vcr27&layout=compact&theme=default&hide_border=true" alt="Top languages card">
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Connect</p>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:r.varunchandanrao@gmail.com">r.varunchandanrao@gmail.com</a>
+        <a href="https://github.com/vcr27" target="_blank" rel="noreferrer">GitHub Profile</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Varun Ramshetti</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
