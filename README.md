@@ -1,5 +1,7 @@
 # Varun Ramshetti Portfolio (React)
 
+[![Deploy Portfolio to GitHub Pages](https://github.com/vcr27/vcr27.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/vcr27/vcr27.github.io/actions/workflows/deploy.yml)
+
 This portfolio is now built with React + Vite and organized using reusable components and centralized content data.
 
 ## Tech Stack
