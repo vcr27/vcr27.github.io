@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a className="logo" href="#top">
-        VR
+        VCR
       </a>
       <div className="nav-links">
         {navLinks.map((link) => (
